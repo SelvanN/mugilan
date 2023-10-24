@@ -1,0 +1,40 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.review{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.Blog{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.Blog1, .Blog2, .Blog3{
+    border: 1px solid rgb(71, 66, 66);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    width: 25%;
+}
+
+a{
+    color:blue;
+}
+
+h1{
+    font-weight: 600;
+    margin-left: 100px ;
+    margin-top: 20px;
+    margin-bottom: -30px;
+}

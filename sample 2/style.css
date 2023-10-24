@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* header section */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    box-shadow: 0 0 5px rgb(201, 199, 199);
+    font-size: 20px;
+    color: black;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: center;
+}
+
+.header_btn {
+    padding: 8px 15px;
+    color: skyblue;
+    border: 2px solid skyblue;
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 18px;
+    align-items: center;
+    text-align: center;
+    margin-right: 10px;
+}
+
+
+/* body section */
+
+.body {
+    align-items: center;
+    text-align: center;
+    margin: 50px 20%;
+}
+
+.heading {
+    font-size: 50px;
+    color: black;
+}
+
+.sub_heading {
+    color: #4F5665;
+    padding: 20px;
+    font-size: 23px;
+}
+
+
+/* Plan section */
+
+.plans {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+
+}
+
+.Free_plan {
+    border: 1px solid #9fa1a7;
+    border-radius: 3px;
+    width: 30%;
+}
+
+.Box_heading {
+    padding: 10px;
+    font-size: 24px;
+    border-bottom: 1px solid #9fa1a7;
+    color: black;
+    font-weight: 600;
+    background-color: rgb(245, 244, 244);
+}
+
+.price {
+    color: black;
+    font-size: 35px;
+    font-weight: 600;
+    padding: 15px;
+}
+
+.price span {
+    color: #4F5665;
+}
+
+.lists {
+    color: #4F5665;
+}
+
+ul li {
+    list-style: none;
+    line-height: 35px;
+    font-size: 20px;
+}
+
+.signup_btn {
+    padding: 10px 40px;
+    margin: 10px;
+    color: rgb(4, 171, 236);
+    border: 1px solid rgb(4, 146, 202);
+    border-radius: 3px;
+    font-size: 20px;
+    background-color: #fff;
+}
+
+.getstarted_btn {
+    padding: 11px 50px;
+    margin: 10px;
+    color: #fff;
+    background-color: rgb(5, 178, 247);
+    border-style: none;
+    border-radius: 3px;
+    font-size: 20px;
+}
+
+.line {
+    /* background-color: #4F5665; */
+    box-shadow: 0px 1px 2px #c3c5c9;
+    height: 1px;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    font-size: 14px;
+    align-items: start;
+    text-align: start;
+    margin-top: 40px;
+}
+
+.B {
+    color: blue;
+    align-items: start;
+    text-align: start;
+    font-size: 20px;
+}
+
+.copy_rights {
+    color: #4F5665;
+    margin-left: -50px;
+    margin-right: 50px;
+}
+
+ul li {
+    color: #4F5665;
+}
