@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .circle1 {
+            border: 1px solid red;
+            border-radius: 50%;
+            padding: 10px;
+            box-shadow: 0 0 0 1px #fff;
+            margin: 0 600px;
+        }
+
+        .circle2 {
+            border: 1px solid green;
+            border-radius: 50%;
+            padding: 3px 8px;
+            height: 100px;
+        }
+
+        .borders {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+            margin-top: 100px;
+        }
+
+        .border_blue {
+            border: 2px solid blue;
+            width: 100px;
+            padding: 40px;
+        }
+
+        .border_two {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+        }
+
+        .border_red {
+            border: 2px solid red;
+            width: 100px;
+            padding: 40px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="circle1">
+        <div class="circle2"> </div>
+    </div>
+    <div class="borders">
+        <div class="border_blue"> </div>
+        <div class="border_two">
+            <div class="border_red"></div>
+            <div class="border_red"></div>
+        </div>
+    </div>
+</body>
+
+</html>
