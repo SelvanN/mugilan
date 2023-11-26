@@ -119,6 +119,12 @@ body {
     font-size: 16px;
 }
 
+
+.menu_icon {
+    display: none;
+}
+
+
 div.features:hover {
     background-color: #4CAAA1;
 }
@@ -130,7 +136,7 @@ div.features:hover {
 }
 
 .features:hover+.icv_hide {
-    /* display: block; */
+    display: inline-block;
     visibility: visible;
     margin-bottom: 10px;
     transition: all 500ms ease-in-out;
@@ -364,4 +370,72 @@ span {
     height: 50px;
     display: inline-block;
     box-shadow: 0 10px 6px -6px #777;
+}
+
+
+
+/* media  design */
+
+
+@media only screen and (max-width: 600px) {
+
+    .right_header{
+        display: none;
+    }
+
+    .left_header, .arabic, .word{
+        font-size: 12px;
+    }
+
+
+    .left_body {
+        width: 30%;
+    }
+
+    .features,
+    .txt,
+    .font {
+        font-size: 10px;
+    }
+
+    .right_body {
+        width: 70%;
+    }
+
+    .right_title {
+        font-size: 12px;
+    }
+
+    .right_content {
+        display: none;
+    }
+
+    .arrow-gap {
+        margin-right: 10px;
+    }
+
+    .sub_content {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .buttons button {
+        font-size: 10px;
+        flex-direction: row;
+        margin-left: -10px;
+
+
+    }
+
+    .cancel,
+    .save,
+    .submit {
+        padding: 3px 8px;
+        font-size: 6px;
+    }
+
+    .copyrights {
+        font-size: 10px;
+    }
 }
