@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap');
+
+*{
+   margin: 0px; 
+   padding: 0px;
+   font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    width: 100%;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: black;
+    color: #fff;
+    width: 99%;
+    height: 70px;
+    align-items:center;
+}
+
+.logo{
+    font-size: 25px;
+    font-weight: 800;
+}
+
+span{
+    color: orange; 
+}
+
+.nav a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 13px;
+}
+
+.color{
+color:orange;
+}
+
+button{
+    padding: 5px 25px;
+    border-radius: 5px;
+    border: 3px solid orange;
+    background-color: black;
+    color: #fff;
+    font-size: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+
+/* home screen */
+
+
+.homepage_screen {
+    background-image: url(images/hero-bg.jpg);  
+    color: #fff;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 70vh;
+    padding-top: 100px;
+}
+
+.home_heading{
+    font-size: 50px; 
+    color:#fff;
+    margin: 0 450px 0 450px;
+    font-weight: bold;
+}
+
+.home_subheading{
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 50px;
+}
+
+.home_box{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    font-size: 25px;
+    align-items: center;
+    text-align: center;
+}
+
+.box_1{
+    border: 2px solid orange;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.icon{
+    font-size: 40px;
+    color: orange;
+}
+
+.content_page_screen{
+    display: flex;
+    width: 100%;
+    margin-top: 50px;
+    padding: 0 20px;
+    align-items: start;
+    line-height: 30px;
+}
+
+.left_content, .right_content{
+    width: 50%;
+}
+
+.content_heading{
+    font-size: 23px;
+    font-weight:bold;
+    margin-bottom: 20px;
+}
+
+.content_subheading{
+    font-size: 16px;
+    color: rgb(104, 99, 99);
+    margin-bottom: 10px;
+}
+
+.content_lists{
+    margin-bottom: 15px;
+}
+
+.content_sponsers_circle{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.sponsers_circle{
+    background-color: gray;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    border: 1px solid gray;
+}
+
+.sponsers_circle_clr{
+    background-color: orange;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    border: 1px solid orange;
+}
