@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Flexor</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="BOOTSTRAP SAMPLE.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+
+
+        .Contacts {
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            align-items: center;
+        }
+
+        .Information {
+            display: flex;
+            justify-content: space-around;
+            gap: 20px;
+            text-align: center;
+            align-items: center;
+            padding: 10px 0 0 30px;
+        }
+
+        .icons {
+            color: #D96744;
+        }
+
+        .Email_id,
+        .Mobile_Number,
+        .Date_Day {
+            color: #fff;
+            font-size: 16px;
+        }
+
+        .Buttons {
+            color: #fff;
+            background-color: orangered;
+        }
+
+
+        /* nav bar */
+
+
+        .Navigation_bar {
+            display: flex;
+            justify-content: space-around;
+            background-color: white;
+            height: 100px;
+            text-align: center;
+            align-items: center;
+
+        }
+
+        .left_header,
+        .right_header {
+            display: flex;
+            align-items: center;
+        }
+
+        .word {
+            font-size: 30px;
+            font-weight: 600;
+            margin-left: 30px;
+        }
+
+        .Navigation_bar .names a {
+            text-decoration: none;
+            padding-right: 30px;
+            margin-bottom: 25px;
+            color: #8B8B88;
+        }
+
+        .Navigation_bar .purple a {
+            color: red;
+        }
+
+
+        .homepage_screen {
+            background-image: url();
+            color: #fff;
+            height: 100vh;
+            padding: 70px 0;
+            width: 100%;
+            text-align: center;
+        }
+
+        .home_heading {
+            font-size: 34px;
+            color: #fff;
+            padding: 60px 60% 0px 0px;
+            font-weight: 800;
+        }
+
+        .home_subheading {
+            font-size: 20px;
+            color: #D2D1Cf;
+            font-weight: 800;
+            padding: 0 30% 0px 0px;
+        }
+
+        .Ending {
+            padding: 40px 70% 0 10%;
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+
+        .arrow {
+            color: white;
+            background-color: #FE5720;
+            border-radius: 50px;
+            height: 40px;
+            width: 40px;
+            position: relative;
+            left: 20px;
+        }
+
+        .get {
+            background-color: #584A47;
+            color: white;
+            border-radius: 23px;
+            font-size: 23px;
+            padding-bottom: 3px;
+            padding: 5px 30px;
+            border: none;
+
+        }
+
+        .Company_website {
+            display: flex;
+            text-align: center;
+            align-items: center;
+            margin-top: -60px;
+        }
+
+        .gap {
+            gap: 100px;
+        }
+
+
+        .Company_website .first_box {
+            background-color: #FF5821;
+            margin-top: -100px;
+            border-radius: 10px;
+        }
+
+        .Company_website .first_heading {
+            color: white;
+            text-align: justify;
+            padding: 10px;
+            font-size: 20px;
+            font-size: 800;
+        }
+
+        .Company_website .first_subheading {
+            color: white;
+            text-align: justify;
+        }
+
+        .Company_website .second_box {
+            background-color: white;
+            border: 1px solid #F1F1F1;
+            border-radius: 10px;
+            border: 1px solid gray;
+        }
+
+        .Company_website .second_heading {
+            font-size: 20px;
+            font-weight: 800;
+            color: black;
+            padding: 10px;
+        }
+
+        .Company_website .second_subheading {
+            padding: 10px;
+            font-size: 15px;
+            text-align: justify;
+            color: black;
+        }
+
+        .Company_website .ion {
+            font-size: 40px;
+            color: #FF5821;
+            padding-top: 20px;
+        }
+
+        .Company_website .third_box {
+            background-color: white;
+            border: 1px solid #F1F1F1;
+            border-radius: 10px;
+            border: 1px solid gray;
+        }
+
+        .Company_website .third_heading {
+            padding: 10px;
+            font-size: 20px;
+            font-weight: 800;
+            color: black;
+        }
+
+        .Company_website .third_subheading {
+            padding: 0 30px 0 20px;
+            font-size: 15px;
+            color: black;
+        }
+
+        .Company_website .four_box {
+            background-color: white;
+            border: 1px solid #F1F1F1;
+            border-radius: 10px;
+            border: 1px solid gray;
+
+        }
+
+        .Company_website .four_heading {
+            font-size: 20px;
+            font-weight: 800;
+            color: black;
+            padding: 10px;
+        }
+
+        .Company_website .four_subheading {
+            padding: 0 30px 0 20px;
+            font-size: 15px;
+            color: black;
+        }
+
+        @media (min-width: 576px) {
+            .Contacts .Buttons {
+                margin-left: 0;
+            }
+
+            .Navigation_bar .names {
+                flex-wrap: nowrap;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .Navigation_bar .word {
+                font-size: 26px;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .Contacts .Information {
+                justify-content: flex-end;
+            }
+        }
+
+        @media (min-width: 1200px) {
+
+            .Company_website .first_box,
+            .Company_website .second_box,
+            .Company_website .third_box,
+            .Company_website .four_box {
+                width: 25%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="container-fluid Contacts bg-dark">
+            <div class="Information">
+                <div class="Email_id">
+                    <ion-icon name="mail-outline" class="icons"></ion-icon>
+                    contact@example.com
+                </div>
+                <div class="Mobile_Number">
+                    <ion-icon name="call-outline" class="icons"></ion-icon>
+                    +1 58873 5433 22
+                </div>
+                <div class="Date_Day">
+                    <ion-icon name="time-outline" class="icons"></ion-icon>
+                    mon-fri 9am-5pm
+                </div>
+
+            </div>
+            <div class="Buttons">
+                <button class="btn Buttons ">GET STARTED</button>
+            </div>
+        </div>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+                <div class="word">Flexor</div>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto names">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">DROP Down^</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container-fluid homepage_screen">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <div class="home_heading">
+                        Welcome To Flexor
+                    </div>
+                    <div class="home_subheading">
+                        We Are Team Of Talented Designers Making Websites and Bootstrap.
+                    </div>
+                    <div class="Ending">
+                        <ion-icon name="arrow-forward-outline" class="arrow"></ion-icon>
+                        <span class="get btn btn-danger">Get Started</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container Company_website">
+            <div class="row gap">
+                <div class="col-2 first_box">
+                    <div class="first_heading">
+                        Why Choose Flexor For Your Company Website?
+                    </div>
+                    <div class="first_subheading">
+                        The class attribute is mostly used to point to a class in a style sheet
+                        Howeverit can also be used by a JavaScript
+                    </div>
+                </div>
+                <div class="col-2 second_box">
+                    <div class="ion">
+                        <ion-icon name="document-text-outline"></ion-icon>
+                    </div>
+                    <div class="second_heading">
+                        Corporus Voltaile lunus
+                    </div>
+                    <div class="second_subheading">
+                        The class attribute is mostly used to point to a class in a style sheet
+                        Howeverit can also be used by a JavaScript
+                    </div>
+                </div>
+                <div class="col-2 third_box">
+                    <div class="ion">
+                        <ion-icon name="timer-outline"></ion-icon>
+                    </div>
+                    <div class="third_heading">
+                        Ullama Loris Ladder Ics
+                    </div>
+                    <div class="third_subheading">
+                        The class attribute is mostly used to point to a class in a style sheet
+                        Howeverit can also be used by a JavaScript
+                    </div>
+                </div>
+                <div class="col-2 four_box">
+                    <div class="ion">
+                        <ion-icon name="bookmarks-outline"></ion-icon>
+                    </div>
+                    <div class="four_heading">
+                        Lopore Consequetars
+                    </div>
+                    <div class="four_subheading">
+                        The class attribute is mostly used to point to a class in a style sheet
+                        Howeverit can also be used by a JavaScript
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- Your existing scripts go here -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
